@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Finance">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/lunaCurrText"
+        android:text="Ciclu curent"
+        android:textIsSelectable="true"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/totalWoPastView"
+        android:layout_above="@+id/totalLeftView"
+        android:layout_alignStart="@+id/totalSpentView"
+        android:layout_toStartOf="@+id/RonText1"
+        android:text="527"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textColor="@color/blue"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/RonText1"
+        android:layout_above="@+id/totalLeftView"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:text="RON"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textColor="@color/blue"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/totalText"
+        android:layout_below="@+id/lunaCurrText"
+        android:text="Total Ramas: "
+        android:textIsSelectable="true"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/totalLeftView"
+        android:layout_below="@+id/lunaCurrText"
+        android:layout_alignStart="@+id/totalSpentView"
+        android:layout_toStartOf="@+id/RonText2"
+        android:gravity="center"
+        android:text="1457"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textColor="@color/green">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/RonText2"
+        android:layout_below="@+id/lunaCurrText"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:text="RON"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textColor="@color/green"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/BudgetText"
+        android:layout_below="@+id/totalText"
+        android:text="Buget: "
+        android:textIsSelectable="true"
+        android:textSize="35sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/budgetView"
+        android:layout_below="@+id/totalText"
+        android:layout_alignStart="@+id/totalSpentView"
+        android:layout_toStartOf="@+id/RonText3"
+        android:gravity="center"
+        android:text="2000"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/RonText3"
+        android:layout_below="@+id/totalText"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:text="RON"
+        android:textIsSelectable="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/totalCheltuitText"
+        android:layout_below="@+id/BudgetText"
+        android:text="Total cheltuit: "
+        android:textIsSelectable="true"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/totalSpentView"
+        android:layout_below="@+id/budgetView"
+        android:layout_toEndOf="@+id/totalCheltuitText"
+        android:layout_toStartOf="@+id/RonText4"
+        android:gravity="center"
+        android:text="543"
+        android:textIsSelectable="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/RonText4"
+        android:layout_below="@+id/budgetView"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:text="RON"
+        android:textIsSelectable="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/lunaPastText"
+        android:layout_below="@+id/totalCheltuitText"
+        android:text="Ciclul trecut"
+        android:textIsSelectable="true"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/totalLeftPastText"
+        android:layout_below="@+id/lunaPastText"
+        android:text="Total Ramas: "
+        android:textIsSelectable="true"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/totalLeftPastView"
+        android:layout_below="@+id/lunaPastText"
+        android:layout_alignStart="@+id/totalSpentView"
+        android:layout_toStartOf="@+id/RonText5"
+        android:gravity="center"
+        android:text="-930"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/RonText5"
+        android:layout_below="@+id/lunaPastText"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:text="RON"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/totalLeftPastText"
+        android:id="@+id/financeDetailsButton"
+        android:gravity="center"
+        android:text="Detalii"
+        android:textSize="40sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/nextCycleButton"
+        android:layout_below="@+id/financeDetailsButton"
+        android:gravity="center"
+        android:text="Începe ciclul următor"
+        android:textSize="40sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/resetFinanceButton"
+        android:layout_below="@+id/nextCycleButton"
+        android:gravity="center"
+        android:text="Resetare"
+        android:textSize="40sp" />
+</RelativeLayout>

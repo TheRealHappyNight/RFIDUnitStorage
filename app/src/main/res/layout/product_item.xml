@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:id="@+id/parent_layout">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/productImageView"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productNameView"
+        android:layout_toEndOf="@+id/productImageView"
+        android:text="Lapte"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/productNameView"
+        android:id="@+id/Cantitate"
+        android:text="Cantitate:"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productQuantity"
+        android:layout_toEndOf="@id/Cantitate"
+        android:text="0"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productExpDateView"
+        android:layout_toEndOf="@id/DataExpirare"
+        android:text="12/05/2012"
+        android:textSize="20sp"
+        android:layout_alignBottom="@id/productImageView"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataExpirare"
+        android:layout_toEndOf="@id/productImageView"
+        android:text="Data Expirare:"
+        android:textSize="20sp"
+        android:layout_alignBottom="@id/productImageView"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceText"
+        android:layout_toEndOf="@+id/productImageView"
+        android:text="Preț: "
+        android:textSize="20sp"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceView"
+        android:layout_toEndOf="@+id/priceText"
+        android:layout_centerVertical="true"
+        android:text="30 RON"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

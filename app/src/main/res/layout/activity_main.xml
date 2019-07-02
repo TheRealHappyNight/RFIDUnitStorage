@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextClock
+        android:id="@+id/datetimeView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:format24Hour="dd-MMM-yyyy&#xD;hh:mm:ss A"
+        android:text="12-Jun-2019 08:32:10 PM"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/alarmView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/datetimeView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/datetimeView"
+        android:text="Fara Produse"
+        android:textSize="25sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/testView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtString"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtString"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/testView1"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:src="@mipmap/listaproduse"
+        android:id="@+id/productListButton"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/datetimeView"
+        android:layout_marginStart="140dp"
+        android:contentDescription="Listă de produse"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/produseText"
+        android:layout_below="@+id/productListButton"
+        android:text="Listă de produse"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:src="@mipmap/listaretete"
+        android:id="@+id/recipeListButton"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/produseText"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="Listă de rețete"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeText"
+        android:layout_below="@+id/recipeListButton"
+        android:text="Listă de rețete"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:src="@mipmap/basket"
+        android:id="@+id/basketButton"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/recipeText"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="Listă de rețete"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/basketText"
+        android:layout_below="@+id/basketButton"
+        android:text="Coș de cumpărături"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/financeButton"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/basketText"
+        android:layout_marginStart="150dp"
+        android:contentDescription="Finanțe"
+        android:text="finanțe"/>
+
+</RelativeLayout>

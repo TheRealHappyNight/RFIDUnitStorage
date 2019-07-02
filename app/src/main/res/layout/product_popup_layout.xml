@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="275dp"
+    android:background="@color/colorAccent"
+    android:layout_gravity="center">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/addProductButton"
+        android:text="Adaugă în coș"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help"
+        android:layout_below="@+id/addProductButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/changePrice"
+        android:text="Shimbă preț"
+        android:layout_below="@id/help"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help1"
+        android:layout_below="@+id/changePrice"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/changeExpDateButton"
+        android:layout_below="@+id/help1"
+        android:text="Schimbă dată de expirare"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

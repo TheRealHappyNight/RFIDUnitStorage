@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasketActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/basketText2"
+        android:text="Coș de cumpărături:"
+        android:textSize="30sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/basketListView"
+        android:layout_below="@id/basketText2"
+        android:layout_above="@+id/orderButton"
+        android:layout_margin="2dp"/>
+
+    <ImageButton
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/orderButton"
+        android:src="@mipmap/add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/resetBasketButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/basketListView"
+        android:text="Reset"
+        android:textSize="30sp"
+        android:layout_toStartOf="@id/pretText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/pretText"
+        android:text="Preț:"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/basketPrice"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/basketPrice"
+        android:text="30"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/basketPrice1"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/basketPrice1"
+        android:text="RON"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/orderButton"
+        android:gravity="center"/>
+
+</RelativeLayout>

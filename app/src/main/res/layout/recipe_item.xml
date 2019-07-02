@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:id="@+id/parent_layout">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/recipeImageView"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeNameView"
+        android:layout_toEndOf="@id/recipeImageView"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="Omleta"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeDescriptionView"
+        android:layout_toEndOf="@id/recipeImageView"
+        android:layout_above="@+id/recipeReadyView"
+        android:layout_below="@id/recipeNameView"
+        android:layout_margin="5dp"
+        android:text="Sparge 3 oua intr-un castron mediu si prajeste-le bine"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeReadyView"
+        android:layout_alignBottom="@+id/recipeImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Nu se poate prepara"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        />
+</RelativeLayout>
